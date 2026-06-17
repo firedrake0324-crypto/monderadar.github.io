@@ -2,42 +2,71 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>今日總雷達｜孟德雷達 MONDE RADAR</title>
+  <title>今日總雷達｜MONDE RADAR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body{margin:0;font-family:"Microsoft JhengHei",Arial,sans-serif;background:#0b1020;color:white;}
-    .wrap{max-width:900px;margin:auto;padding:50px 20px;}
-    h1{text-align:center;font-size:38px;}
-    h2{text-align:center;color:#ffd166;font-weight:normal;}
-    .card{background:#151b2f;border-radius:18px;padding:26px;margin:22px 0;line-height:1.9;}
-    .btn{display:inline-block;margin-top:20px;padding:12px 22px;border-radius:999px;background:#ffd166;color:#111;text-decoration:none;font-weight:bold;}
-    .note{color:#bbb;font-size:14px;}
+    .wrap{max-width:960px;margin:auto;padding:48px 20px;}
+    .site-brand{text-align:center;margin-bottom:34px;}
+    .site-logo{width:clamp(120px,22vw,180px);height:auto;display:block;margin:0 auto 16px;}
+    .site-brand-title{margin:0;font-size:34px;letter-spacing:0;color:#fff;}
+    .site-brand-name{margin:6px 0 0;color:#ffd166;font-size:22px;font-weight:700;}
+    .site-brand-tagline{margin:8px 0 0;color:#dbeafe;font-size:18px;}
+    h1{text-align:center;font-size:38px;margin:10px 0;}
+    h2{color:#ffd166;font-size:22px;margin:0 0 18px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .card{background:#151b2f;border:1px solid rgba(255,209,102,.18);border-radius:14px;padding:24px;margin:20px 0;line-height:1.8;box-shadow:0 8px 24px rgba(0,0,0,.24);}
+    .metric{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid rgba(255,255,255,.08);padding:8px 0;}
+    .metric span:first-child{color:#dbeafe;}
+    .metric span:last-child{color:#ffd166;font-weight:700;text-align:right;}
+    ul{padding-left:22px;}
+    a{color:#ffd166;}
+    .btn{display:inline-block;margin:8px 8px 0 0;padding:12px 20px;border-radius:999px;background:#ffd166;color:#111;text-decoration:none;font-weight:bold;}
+    .note{color:#cbd5e1;font-size:14px;}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <a class="btn" href="today.html">今日總雷達</a>
-    <h2>MONDE RADAR｜掌握市場脈動</h2>
-
-    <div class="card">
-      <h3>2026/06/14 市場觀察</h3>
-      <p>這裡將放每日台股、美股、籌碼、期貨與當沖觀察內容。</p>
-      <p class="note">目前為測試版，正式資料將由 MarketTracker 自動更新。</p>
+    
+    <header class="site-brand">
+      <img class="site-logo" src="assets/logo.png" alt="MONDE RADAR Logo">
+      <div class="site-brand-title">MONDE RADAR</div>
+      <div class="site-brand-name">孟德雷達</div>
+      <p class="site-brand-tagline">掌握市場脈動</p>
+    </header>
+    
+    
+    <h1>MONDE RADAR 今日總雷達</h1>
+    <div class="card"><h2>更新日期</h2><p>20260617</p></div>
+    <div class="grid">
+      <div class="card"><h2>大盤</h2>
+        <div class="metric"><span>加權指數</span><span>資料尚未更新</span></div>
+        <div class="metric"><span>櫃買指數</span><span>資料尚未更新</span></div>
+      </div>
+      <div class="card"><h2>三大法人金額</h2>
+        <div class="metric"><span>外資</span><span>資料尚未更新</span></div>
+        <div class="metric"><span>投信</span><span>資料尚未更新</span></div>
+        <div class="metric"><span>自營商</span><span>資料尚未更新</span></div>
+      </div>
+      <div class="card"><h2>期貨籌碼</h2>
+        <div class="metric"><span>外資大小台合計</span><span>資料尚未更新</span></div>
+        <div class="metric"><span>十大交易人</span><span>-5409.0</span></div>
+        <div class="metric"><span>十大特定法人</span><span>272.0</span></div>
+      </div>
+      <div class="card"><h2>選擇權 / 影片</h2>
+        <div class="metric"><span>Put/Call Ratio</span><span>133.15%</span></div>
+        <div class="metric"><span>最新影片</span><span>C:\Users\fired\Desktop\MarketTracker\shorts\2026-06-17_孟德總雷達Short.mp4</span></div>
+      </div>
     </div>
-
-    <div class="card">
-      <h3>今日重點</h3>
-      <p>📈 加權指數：</p>
-      <p>📊 櫃買指數：</p>
-      <p>💰 三大法人：</p>
-      <p>📌 外資期貨：</p>
-      <p>📌 十大交易人：</p>
-      <p>📌 十大特定法人：</p>
-      <p>📌 PCR：</p>
-      <p>📌 融資融券：</p>
+    <div class="card"><h2>台股 TOP3</h2><ul><li>1. 2408.TW 南亞科｜總分 100｜三大法人 同步買超｜RR 1.14｜中高強度，可列入候選</li>
+<li>2. 2375.TW 凱美｜總分 100｜三大法人 未同步｜RR 1.14｜中高強度，可列入候選</li>
+<li>3. 6182.TWO 合晶｜總分 100｜三大法人 未同步｜RR 1.17｜中高強度，可列入候選</li></ul></div>
+    <div class="grid">
+      <div class="card"><h2>當沖多方 TOP2</h2><ul><li>資料累積中</li></ul></div>
+      <div class="card"><h2>當沖空方 TOP2</h2><ul><li>資料累積中</li></ul></div>
     </div>
-
     <a class="btn" href="index.html">回首頁</a>
+    
   </div>
 </body>
 </html>

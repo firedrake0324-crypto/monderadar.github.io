@@ -6,35 +6,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body{margin:0;font-family:"Microsoft JhengHei",Arial,sans-serif;background:#0b1020;color:white;}
-    .wrap{max-width:900px;margin:auto;padding:50px 20px;}
-    h1{text-align:center;font-size:38px;}
-    h2{text-align:center;color:#ffd166;font-weight:normal;}
-    .card{background:#151b2f;border-radius:18px;padding:26px;margin:22px 0;line-height:1.9;}
-    .btn{display:inline-block;margin-top:20px;padding:12px 22px;border-radius:999px;background:#ffd166;color:#111;text-decoration:none;font-weight:bold;}
-    .note{color:#bbb;font-size:14px;}
+    .wrap{max-width:960px;margin:auto;padding:48px 20px;}
+    .site-brand{text-align:center;margin-bottom:34px;}
+    .site-logo{width:clamp(120px,22vw,180px);height:auto;display:block;margin:0 auto 16px;}
+    .site-brand-title{margin:0;font-size:34px;letter-spacing:0;color:#fff;}
+    .site-brand-name{margin:6px 0 0;color:#ffd166;font-size:22px;font-weight:700;}
+    .site-brand-tagline{margin:8px 0 0;color:#dbeafe;font-size:18px;}
+    h1{text-align:center;font-size:38px;margin:10px 0;}
+    h2{color:#ffd166;font-size:22px;margin:0 0 18px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .card{background:#151b2f;border:1px solid rgba(255,209,102,.18);border-radius:14px;padding:24px;margin:20px 0;line-height:1.8;box-shadow:0 8px 24px rgba(0,0,0,.24);}
+    .metric{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid rgba(255,255,255,.08);padding:8px 0;}
+    .metric span:first-child{color:#dbeafe;}
+    .metric span:last-child{color:#ffd166;font-weight:700;text-align:right;}
+    ul{padding-left:22px;}
+    a{color:#ffd166;}
+    .btn{display:inline-block;margin:8px 8px 0 0;padding:12px 20px;border-radius:999px;background:#ffd166;color:#111;text-decoration:none;font-weight:bold;}
+    .note{color:#cbd5e1;font-size:14px;}
   </style>
 </head>
 <body>
   <div class="wrap">
+    
+    <header class="site-brand">
+      <img class="site-logo" src="assets/logo.png" alt="MONDE RADAR Logo">
+      <div class="site-brand-title">MONDE RADAR</div>
+      <div class="site-brand-name">孟德雷達</div>
+      <p class="site-brand-tagline">掌握市場脈動</p>
+    </header>
+    
+    
     <h1>當沖雷達</h1>
-    <h2>MONDE RADAR｜掌握市場脈動</h2>
-
-    <div class="card">
-      <h3>每日當沖觀察</h3>
-      <p>這裡將放多方 TOP3、空方 TOP3、隔日沖券商、法人籌碼與技術排行。</p>
-      <p class="note">目前為測試版，正式資料將由 MarketTracker 自動更新。</p>
+    <div class="card"><h2>更新日期</h2><p>2026-06-12</p></div>
+    <div class="card"><h2>市場情緒</h2><p>依最新當沖報告整理</p></div>
+    <div class="grid">
+      <div class="card"><h2>多方 TOP3</h2><ul><li>3042.TW 晶技</li>
+<li>2313.TW 華通</li>
+<li>2404.TW 漢唐</li></ul></div>
+      <div class="card"><h2>空方 TOP3</h2><ul><li>2383.TW 台光電</li>
+<li>2303.TW 聯電</li>
+<li>2344.TW 華邦電</li></ul></div>
     </div>
-
-    <div class="card">
-      <h3>今日重點</h3>
-      <p>🚀 多方 TOP3：</p>
-      <p>⚠️ 空方 TOP3：</p>
-      <p>📌 隔日沖券商介入：</p>
-      <p>📌 漲停外資賣超：</p>
-      <p>📌 跌停外資買超：</p>
+    <div class="grid">
+      <div class="card"><h2>隔日沖券商介入</h2><p>資料累積中</p></div>
+      <div class="card"><h2>漲停外資賣超</h2><p>資料累積中</p></div>
+      <div class="card"><h2>跌停外資買超</h2><p>資料累積中</p></div>
+      <div class="card"><h2>法人偷偷買</h2><p>資料累積中</p></div>
     </div>
-
-    <a class="btn" href="/monderadar.github.io/index.html">回首頁</a>
+    <a class="btn" href="index.html">回首頁</a>
+    
   </div>
 </body>
 </html>

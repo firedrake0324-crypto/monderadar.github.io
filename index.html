@@ -2,83 +2,59 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <title>孟德雷達 MENGDE RADAR</title>
+  <title>首頁｜MONDE RADAR</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      margin: 0;
-      font-family: "Microsoft JhengHei", Arial, sans-serif;
-      background: #0b1020;
-      color: white;
-      text-align: center;
-    }
-    .wrap {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #ffd166;
-      font-weight: normal;
-      margin-bottom: 40px;
-    }
-    .card {
-      background: #151b2f;
-      border-radius: 18px;
-      padding: 28px;
-      margin: 20px 0;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 24px;
-      border-radius: 999px;
-      background: #ffd166;
-      color: #111;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .footer {
-      margin-top: 50px;
-      color: #aaa;
-      font-size: 14px;
-    }
+    body{margin:0;font-family:"Microsoft JhengHei",Arial,sans-serif;background:#0b1020;color:white;}
+    .wrap{max-width:960px;margin:auto;padding:48px 20px;}
+    .site-brand{text-align:center;margin-bottom:34px;}
+    .site-logo{width:clamp(120px,22vw,180px);height:auto;display:block;margin:0 auto 16px;}
+    .site-brand-title{margin:0;font-size:34px;letter-spacing:0;color:#fff;}
+    .site-brand-name{margin:6px 0 0;color:#ffd166;font-size:22px;font-weight:700;}
+    .site-brand-tagline{margin:8px 0 0;color:#dbeafe;font-size:18px;}
+    h1{text-align:center;font-size:38px;margin:10px 0;}
+    h2{color:#ffd166;font-size:22px;margin:0 0 18px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;}
+    .card{background:#151b2f;border:1px solid rgba(255,209,102,.18);border-radius:14px;padding:24px;margin:20px 0;line-height:1.8;box-shadow:0 8px 24px rgba(0,0,0,.24);}
+    .metric{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid rgba(255,255,255,.08);padding:8px 0;}
+    .metric span:first-child{color:#dbeafe;}
+    .metric span:last-child{color:#ffd166;font-weight:700;text-align:right;}
+    ul{padding-left:22px;}
+    a{color:#ffd166;}
+    .btn{display:inline-block;margin:8px 8px 0 0;padding:12px 20px;border-radius:999px;background:#ffd166;color:#111;text-decoration:none;font-weight:bold;}
+    .note{color:#cbd5e1;font-size:14px;}
   </style>
 </head>
 <body>
   <div class="wrap">
+    
+    <header class="site-brand">
+      <img class="site-logo" src="assets/logo.png" alt="MONDE RADAR Logo">
+      <div class="site-brand-title">MONDE RADAR</div>
+      <div class="site-brand-name">孟德雷達</div>
+      <p class="site-brand-tagline">掌握市場脈動</p>
+    </header>
+    
+    
     <h1>孟德雷達</h1>
-    <h2>MENGDE RADAR｜掌握市場脈動</h2>
-
-    <div class="card">
-      <h3>每日市場雷達</h3>
-      <p>台股、美股、籌碼、當沖觀察，協助你快速掌握市場方向。</p>
-      <a class="btn" href="/monderadar.github.io/today.html">今日總雷達</a>
-      <a class="btn" href="/monderadar.github.io/us.html">美股雷達</a>
-      <a class="btn" href="/monderadar.github.io/daytrade.html">當沖雷達</a>
+    <div class="card"><h2>今日市場溫度</h2><p>資料尚未更新</p></div>
+    <div class="grid">
+      <div class="card"><h2>今日台股重點</h2><ul><li>1. 2408.TW 南亞科｜總分 100｜三大法人 同步買超｜RR 1.14｜中高強度，可列入候選</li>
+<li>2. 2375.TW 凱美｜總分 100｜三大法人 未同步｜RR 1.14｜中高強度，可列入候選</li>
+<li>3. 6182.TWO 合晶｜總分 100｜三大法人 未同步｜RR 1.17｜中高強度，可列入候選</li></ul><a class="btn" href="today.html">今日總雷達</a></div>
+      <div class="card"><h2>今日美股重點</h2><ul><li>GE 奇異航太｜偏多觀察，站上MA20、站上MA60</li>
+<li>MS 摩根士丹利｜偏多觀察，站上MA20、站上MA60</li>
+<li>APH 安費諾｜偏多觀察，站上MA20、站上MA60</li></ul><a class="btn" href="us.html">美股早安雷達</a></div>
     </div>
-
-    <div class="card">
-      <h3>追蹤孟德雷達</h3>
-      <p>歡迎追蹤最新影片、文章與會員頻道。</p>
-      <a class="btn" href="https://www.facebook.com/Monde0605" target="_blank">Facebook</a>
-      <a class="btn" href="https://t.me/monde_stock" target="_blank">Telegram</a>
-      <a class="btn" href="#">LINE VIP</a>
+    <div class="card"><h2>最新影片</h2>
+      <div class="metric"><span>最新孟德總雷達</span><span>C:\Users\fired\Desktop\MarketTracker\shorts\2026-06-17_孟德總雷達Short.mp4</span></div>
+      <div class="metric"><span>最新美股早安雷達</span><span>2026-06-18_孟德美股雷達V13_1Short.mp4</span></div>
     </div>
-
-    <div class="card">
-      <h3>投資提醒</h3>
-      <p>本網站內容僅供研究與教學參考，非投資建議。投資有風險，請自行判斷並做好風險控管。</p>
-    </div>
-
-    <div class="footer">
-      © 2026 孟德雷達 MENGDE RADAR
-    </div>
+    <div class="card"><h2>Telegram 頻道入口</h2><p><a href="https://t.me/monde_stock" target="_blank">@monde_stock</a></p></div>
+    <a class="btn" href="today.html">台股</a>
+    <a class="btn" href="us.html">美股</a>
+    <a class="btn" href="daytrade.html">當沖</a>
+    
   </div>
 </body>
 </html>
